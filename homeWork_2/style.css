@@ -1,0 +1,24 @@
+.block_1 {
+    background-color: #432085;
+    color: #ffffff;
+}
+
+.color_text {
+    color: #06bef7;
+}
+
+.block_2 {
+    height: 100px;
+    width: 100px;
+    background-color: #5ae7b8;
+}
+
+.block_3 {
+    width: 300px;
+    background-color: #d2691e;
+}
+
+.block_3 span {
+    background-color: #b31106;
+    color: #ffffff;
+}

@@ -1,0 +1,25 @@
+.font-1 {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.font-2 {
+    text-decoration:line-through;
+}
+
+.font-3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.font-4 {
+    text-decoration: overline wavy;
+    word-spacing: 30px;
+    text-shadow: rgb(63, 9, 107) 1px 1px 5px;
+}
+
+.font-5 {
+    letter-spacing: 5px;
+    text-decoration: underline double;
+}

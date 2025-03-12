@@ -1,0 +1,19 @@
+.main-block {
+    height: 500px;
+    background: rgb(236, 216, 236);
+    border: 1px solid black;
+    border-radius: 20px 0 0 20px;
+    overflow: auto;
+}
+
+div {
+    display: inline-block;
+    max-width: 200px;
+    max-height: 150px;
+    background: burlywood;
+    box-shadow: 0px 0px 16px 0px #17354b inset;
+    margin: 10px 10px 5px 5px;
+    text-align: left;
+    border-radius: 20px;
+    padding: 20px;
+}

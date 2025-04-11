@@ -1,6 +1,6 @@
 (function () {
 
-    // Бургер
+    // Бургер-----------------------------------
 
     document.addEventListener('click', burgerInit)
 
@@ -10,7 +10,7 @@
         const burgerNavLink = e.target.closest('.nav__link')
 
         if (!burgerIcon && !burgerNavLink) return
-        if(document.documentElement.clientWidth > 900) return
+        if (document.documentElement.clientWidth > 900) return
 
         if (!document.body.classList.contains('body--open-menu')) {
             document.body.classList.add('body--open-menu')
@@ -20,7 +20,7 @@
 
     }
 
-    // Модалка
+    // Модалка----------------------------------
 
     const modal = document.querySelector('.modal')
     const modalButton = document.querySelector('.about__img-button')
@@ -42,12 +42,12 @@
         }
     }
 
-    // Табы
+    // Табы----------------------
 
     const tabControls = document.querySelector('.tab-controls')
 
     tabControls.addEventListener('click', toggleTab)
-    
+
     function toggleTab(e) {
 
         const tabControl = e.target.closest('.tab-controls__link')
@@ -71,7 +71,41 @@
 
         tabControl.classList.add('tab-controls__link--active')
         tabContent.classList.add('tab-content--show')
-        
+
     }
+
+    //Аккордеон ------------------------
+
+    const accordionlists = document.querySelectorAll('.accordion-list')
+
+    accordionlists.forEach(el => {
+
+        el.addEventListener('click', (e) => {
+
+            const accordionlist = e.currentTarget
+            const accordionOpennedItem = accordionlist.querySelector ('.accordion-list__item--opened')
+            const accordionOpennedContent = accordionlist.querySelector ('.accordion-list__item--opened .accordion-list__content')
+            
+            const accordionControl = e.target.closest('.accordion-list__control')
+            if (!accordionControl) return
+            const accordionItem = accordionControl.parentElement
+            const accordionContent = accordionControl.nextElementSibling
+
+            if (accordionOpennedItem && accordionItem != accordionOpennedItem) {
+                accordionOpennedItem.classList.remove('accordion-list__item--opened')
+                accordionOpennedContent.style.maxHeight = null
+            }
+
+            accordionItem.classList.toggle('accordion-list__item--opened')
+
+            if (accordionItem.classList.contains('accordion-list__item--opened')) {
+                accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px'
+            } else {
+                accordionContent.style.maxHeight = null
+            }
+
+        })
+
+    })
 
 })()

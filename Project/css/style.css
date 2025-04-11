@@ -596,6 +596,8 @@
     display: block;
 }
 
+/* ------------------------------------------------- */
+
 .accordion-list {}
 
 .accordion-list__item {
@@ -626,9 +628,50 @@
 
 .accordion-list__control-title {}
 
-.accordion-list__control-icon {}
+.accordion-list__control-icon {
+    width: 36px;
+    height: 36px;
+    border: 1.50px solid var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: var(--transition);
+}
 
-.accordion-list__content {}
+.accordion-list__control-icon svg {
+    margin-left: 2px;
+}
+
+.accordion-list__control-icon path {
+    transition: var(--transition);
+}
+
+.accordion-list__control:hover .accordion-list__control-icon {
+    background: var(--accent-color);
+    transform: rotate(90deg);
+}
+
+.accordion-list__control:hover .accordion-list__control-icon path {
+    fill: var(--main-bg);
+}
+
+.accordion-list__item--opened .accordion-list__control-icon {
+    background: var(--accent-color);
+    transform: rotate(90deg);
+}
+
+.accordion-list__item--opened .accordion-list__control-icon path {
+    fill: var(--main-bg);
+}
+
+.accordion-list__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
 
 .accordion__content {
     padding: 0 30px 40px;
@@ -638,7 +681,10 @@
 
 /* --------------------------- */
 
-.accordion__content-col {}
+.accordion__content-col:first-child {
+    max-width: 507px;
+    width: 100%;
+}
 
 .accordion__content-title {
     line-height: 1.6;
@@ -649,11 +695,31 @@
 
 .accordion__content-list {}
 
-.accordion__content-item {}
+.accordion__content-item {
+    margin-bottom: 20px;
+    display: flex;
+}
+.accordion__content-item:last-child {
+    margin-bottom: 0;
+}
 
-.accordion__content-icon {}
+.accordion__content-icon {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #ceaad0;
+    border-radius: 50%;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    flex-shrink: 0;
+    
+}
 
-.accordion__content-text {}
+.accordion__content-text {
+    max-width: 274px;
+}
 
 
 

@@ -83,9 +83,9 @@
         el.addEventListener('click', (e) => {
 
             const accordionlist = e.currentTarget
-            const accordionOpennedItem = accordionlist.querySelector ('.accordion-list__item--opened')
-            const accordionOpennedContent = accordionlist.querySelector ('.accordion-list__item--opened .accordion-list__content')
-            
+            const accordionOpennedItem = accordionlist.querySelector('.accordion-list__item--opened')
+            const accordionOpennedContent = accordionlist.querySelector('.accordion-list__item--opened .accordion-list__content')
+
             const accordionControl = e.target.closest('.accordion-list__control')
             if (!accordionControl) return
             const accordionItem = accordionControl.parentElement
@@ -107,5 +107,24 @@
         })
 
     })
+
+    // Слайдеры
+
+    const swiper = new Swiper('.gallery__slider', {
+        
+        slidesPerView: 4,
+        spaceBetween: 32,
+        
+        pagination: {
+            el: '.gallery__pagination',
+            type: 'fraction',
+        },
+
+        
+        navigation: {
+            nextEl: '.gallery__next',
+            prevEl: '.gallery__prev',
+        },
+    });
 
 })()

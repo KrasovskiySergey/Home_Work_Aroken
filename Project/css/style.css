@@ -369,7 +369,6 @@
 /* ============================ */
 
 
-.gallery {}
 
 .gallery__inner {
     display: grid;
@@ -403,7 +402,6 @@
     margin-bottom: 20px;
 }
 
-.gallery__text {}
 
 .gallery__nav {
     display: flex;
@@ -481,13 +479,11 @@
     transform: translate(-50%, -50%);
 }
 
-.gallery__next {}
 
 .gallery__slider {
     border-radius: var(--border-radius);
 }
 
-.gallery__wrapper {}
 
 .gallery__slide {
     border-radius: var(--border-radius);

@@ -103,6 +103,19 @@
     .program__img {
         display: none;
     }
+    /* ============================== */
+
+    .gallery__inner {
+        grid-template: none;
+    }
+
+    .gallery__info {
+        max-width: none;
+    }
+
+    .gallery__img {
+        display: none;
+    }
 
     /* ============================== */
 
@@ -207,7 +220,8 @@
         padding: 60px 0 80px;
     }
 
-    .main__program {
+    .main__program,
+    .main__gallery {
         padding: 0 0 80px;
     }
 
@@ -270,6 +284,14 @@
     }
 
     .program__top {
+        margin-bottom: 20px;
+    }
+
+    .gallery__content {
+        flex-direction: column;
+    }
+
+    .gallery__inner {
         margin-bottom: 20px;
     }
 }

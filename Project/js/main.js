@@ -111,20 +111,40 @@
     // Слайдеры
 
     const swiper = new Swiper('.gallery__slider', {
-        
-        slidesPerView: 4,
-        spaceBetween: 32,
-        
+
+        slidesPerView: 1.5,
+        spaceBetween: 15,
+
         pagination: {
             el: '.gallery__pagination',
             type: 'fraction',
         },
 
-        
+
         navigation: {
             nextEl: '.gallery__next',
             prevEl: '.gallery__prev',
         },
+
+        breakpoints: {
+            
+            450: {
+                spaceBetween: 32,
+                slidesPerView: 2,
+            },
+            601: {
+                spaceBetween: 32,
+                slidesPerView: 3,
+            },
+            801: {
+                spaceBetween: 32,
+                slidesPerView: 4,
+            },
+            1101: {
+                slidesPerView: 4,
+                
+            }
+        }
     });
 
 })()

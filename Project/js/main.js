@@ -151,7 +151,7 @@
 
     new Swiper('.testimonials__slider', {
 
-        slidesPerView: 2.05,
+        slidesPerView: 1,
         spaceBetween: 0,
         centeredSlides: true,
 
@@ -167,7 +167,15 @@
             draggable: true,
         },
 
-
+        breakpoints: {
+            901: {
+                slidesPerView: 1.5,
+                
+            },
+            1201: {
+                slidesPerView: 2.04,
+                
+            }
+        }
     });
-
 })()

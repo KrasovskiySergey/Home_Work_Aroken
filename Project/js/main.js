@@ -108,9 +108,9 @@
 
     })
 
-    // Слайдеры
+    // Слайдер-Галерея
 
-    const swiper = new Swiper('.gallery__slider', {
+    new Swiper('.gallery__slider', {
 
         slidesPerView: 1.5,
         spaceBetween: 15,
@@ -145,6 +145,29 @@
                 
             }
         }
+    });
+
+    // Слайдер-Отзывы
+
+    new Swiper('.testimonials__slider', {
+
+        slidesPerView: 2.05,
+        spaceBetween: 0,
+        centeredSlides: true,
+
+
+
+        navigation: {
+            nextEl: '.testimonials__next',
+            prevEl: '.testimonials__prev',
+        },
+
+        scrollbar: {
+            el: '.testimonials__scrollbar',
+            draggable: true,
+        },
+
+
     });
 
 })()

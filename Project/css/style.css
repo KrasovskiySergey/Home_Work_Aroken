@@ -663,8 +663,25 @@
 
 .contact__inner {
     display: flex;
-    align-items: center;
+    align-items: end;
     gap: 84px;
+    position: relative;
+}
+
+.contact__img {
+    position: relative;
+}
+.contact__inner::before {
+    content: url("../img/decor/berry.png");
+    position: absolute;
+    top: -5%;
+    left: 0%;
+}
+.contact__inner::after {
+    content: url("../img/decor/berry-2.png");
+    position: absolute;
+    top: 5%;
+    right: 0%;
 }
 
 .contact__img img {

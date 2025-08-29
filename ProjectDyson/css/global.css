@@ -1,0 +1,28 @@
+:root {
+    --font-family: "Open Sans", sans-serif;
+    --second-family: "Montserrat", sans-serif;
+    --title-text: #111;
+    --main-bg: #fff;
+    --main-bg-two: #f8f8f8;
+    --bg-color-text: #c5358c; 
+    --margin-clamp: clamp(60px, 9.8vw, 150px) 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+
+

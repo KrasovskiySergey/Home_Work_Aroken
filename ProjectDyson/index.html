@@ -1234,88 +1234,129 @@
             </section>
             <section class="main__reviews">
                 <div class="container">
-
                     <h2 class="reviews__title">
                         Отзывы
                         <span class="count">151</span>
                     </h2>
+                    
                     <div class="review__rating">
                         <div class="review__rating-info">
                             <p class="review__score">
                                 5<span>/5</span>
                             </p>
-                            <img class="review__img-stars" src="img/stars.png" alt="оценка">
+                            <img class="review__img-stars" src="img/stars.png" alt="оценка 5 из 5">
                         </div>
                         <a class="review__write-review" href="#">Написать отзыв</a>
                     </div>
-
+            
                     <div class="divider"></div>
+            
+                    <!-- Видимые отзывы -->
+                    <div class="reviews-visible">
+                        <div class="review">
+                            <div class="review__user-rating">
+                                <p class="review__author">Ольга</p>
+                                <img class="review__img-stars" src="img/stars.png" alt="оценка 5 из 5">
+                            </div>
+                            <div class="review__user">
+                                <h3 class="review__user-title">Это лучший фен!</h3>
+                                <div class="review__user-text">
+                                    Пользуюсь около месяца, хочу поделиться впечатлениями. Во-первых, фен очень легкий,
+                                    удобно лежит в руке, не скользит. Кнопка включения и выключения расположена удобно, а не
+                                    где-то сбоку. Мощность у фена хорошая, волосы сушит быстро.
+                                </div>
+                                <div class="review__user-photo">
+                                    <img src="img/user-photo.png" alt="фото пользователя">
+                                    <img src="img/user-photo.png" alt="фото пользователя">
+                                    <img src="img/user-photo.png" alt="фото пользователя">
+                                </div>
+                                <a href="#" class="review__view-photos">Смотреть все фото</a>
+                            </div>
+                            <div class="review-date">21/05/2022</div>
+                        </div>
+            
+                        <div class="divider"></div>
+            
+                        <div class="review">
+                            <div class="review__user-rating">
+                                <p class="review__author">Татьяна</p>
+                                <img class="review__img-stars" src="img/stars.png" alt="оценка 5 из 5">
+                            </div>
+                            <div class="review__user">
+                                <h3 class="review__user-title">Отличный фен</h3>
+                                <div class="review__user-text">
+                                    Фен очень понравился. Качественный, стильный: свою цену полностью оправдывает!
+                                </div>
+                            </div>
+                            <div class="review-date">21/05/2022</div>
+                        </div>
+            
+                        <div class="divider"></div>
 
-                    <div class="review">
-                        <div class="review__user-rating">
-                            <p class="review__author">Ольга</p>
-                            <img class="review__img-stars" src="img/stars.png" alt="оценка">
-                        </div>
-                        <div class="review__user">
-                            <h3 class="review__user-title">Это лучший фен!</h3>
-                            <div class="review__user-text">
-                                Пользуюсь около месяца, хочу поделиться впечатлениями. Во-первых, фен очень легкий,
-                                удобно лежит в руке, не скользит. Кнопка включения и выключения расположена удобно, а не
-                                где-то сбоку. Мощность у фена хорошая, волосы сушит быстро.
+                        <div class="review">
+                            <div class="review__user-rating">
+                                <p class="review__author">Виктор</p>
+                                <img class="review__img-stars" src="img/stars.png" alt="оценка 5 из 5">
                             </div>
-                            <div class="review__user-photo">
-                                <img src="img/user-photo.png" alt="фото пользователя">
-                                <img src="img/user-photo.png" alt="фото пользователя">
-                                <img src="img/user-photo.png" alt="фото пользователя">
+                            <div class="review__user">
+                                <h3 class="review__user-title">Быстро пришел</h3>
+                                <div class="review__user-text">
+                                    Заказ пришел быстрее, чем ожидал. Упаковка целая, все аккуратно. Пользуюсь уже неделю - пока все нравится.
+                                </div>
+                                <div class="review__user-photo">
+                                    <img src="img/user-photo.png" alt="фото пользователя">
+                                </div>
+                                <a href="#" class="review__view-photos">Смотреть все фото</a>
                             </div>
-                            <a href="#" class="review__view-photos">Смотреть все фото</a>
+                            <div class="review-date">15/05/2022</div>
                         </div>
-                        <div class="review-date">21/05/2022</div>
+
+                        <div class="divider"></div>
                     </div>
+                    
+                    <!-- Скрытые отзывы -->
+                    <div class="reviews-hidden" id="hiddenReviews">
 
-                    <div class="divider"></div>
-
-                    <div class="review">
-                        <div class="review__user-rating">
-                            <p class="review__author">Татьяна</p>
-                            <img class="review__img-stars" src="img/stars.png" alt="оценка">
-                        </div>
-                        <div class="review__user">
-                            <h3 class="review__user-title">Отличный фен</h3>
-                            <div class="review__user-text">
-                                Фен очень понравился. Качественный, стильный: свою цену полностью оправдывает!
+                        <div class="review">
+                            <div class="review__user-rating">
+                                <p class="review__author">Мария</p>
+                                <img class="review__img-stars" src="img/stars.png" alt="оценка 5 из 5">
                             </div>
+                            <div class="review__user">
+                                <h3 class="review__user-title">Профессиональное качество</h3>
+                                <div class="review__user-text">
+                                    Как парикмахер со стажем, могу сказать - это отличный аппарат для домашнего использования. 
+                                    Мощности хватает, несколько режимов температуры, удобная ручка. Рекомендую!
+                                </div>
+                            </div>
+                            <div class="review-date">12/05/2022</div>
                         </div>
-                        <div class="review-date">21/05/2022</div>
+            
+                        <div class="divider"></div>
+            
+                        <div class="review">
+                            <div class="review__user-rating">
+                                <p class="review__author">Анна</p>
+                                <img class="review__img-stars" src="img/stars.png" alt="оценка 5 из 5">
+                            </div>
+                            <div class="review__user">
+                                <h3 class="review__user-title">Тихий и эффективный</h3>
+                                <div class="review__user-text">
+                                    Порадовала низкий уровень шума - можно сушить волосы рано утром, не боясь разбудить домочадцев. 
+                                    При этом сушит очень быстро!
+                                </div>
+                            </div>
+                            <div class="review-date">10/05/2022</div>
+                        </div>
+            
+                        <div class="divider"></div>
                     </div>
-
-                    <div class="divider"></div>
-
-                    <div class="review">
-                        <div class="review__user-rating">
-                            <p class="review__author">Виктор</p>
-                            <img class="review__img-stars" src="img/stars.png" alt="оценка">
-                        </div>
-                        <div class="review__user">
-                            <h3 class="review__user-title">Быстро пришел</h3>
-                            <div class="review__user-text">
-                                Фен очень понравился. Качественный, стильный: свою цену полностью оправдывает!
-                            </div>
-                            <div class="review__user-photo">
-                                <img src="img/user-photo.png" alt="фото пользователя">
-                            </div>
-                            <a href="#" class="review__view-photos">Смотреть все фото</a>
-                        </div>
-                        <div class="review-date">21/05/2022</div>
-                    </div>
-
-                    <div class="divider"></div>
-
-                    <button class="show-more">
+            
+                    <button class="show-more" id="showMoreBtn">
                         Показать еще
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7031 25.722L3.22199 5.13588C2.82325 4.75375 2.80978 4.12073 3.19191 3.72199C3.57403 3.32325 4.20706 3.30978 4.6058 3.69191L26.1919 24.3786V7.44733C26.1919 6.89504 26.6396 6.44733 27.1919 6.44733C27.7442 6.44733 28.1919 6.89504 28.1919 7.44733V26.722C28.1919 27.2743 27.7442 27.722 27.1919 27.722H7.03635C6.48406 27.722 6.03635 27.2743 6.03635 26.722C6.03635 26.1697 6.48406 25.722 7.03635 25.722H24.7031Z" fill="#111111"/>
-                            </svg>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7031 25.722L3.22199 5.13588C2.82325 4.75375 2.80978 4.12073 3.19191 3.72199C3.57403 3.32325 4.20706 3.30978 4.6058 3.69191L26.1919 24.3786V7.44733C26.1919 6.89504 26.6396 6.44733 27.1919 6.44733C27.7442 6.44733 28.1919 6.89504 28.1919 7.44733V26.722C28.1919 27.2743 27.7442 27.722 27.1919 27.722H7.03635C6.48406 27.722 6.03635 26.1697 6.03635 25.6174C6.03635 25.0651 6.48406 24.6174 7.03635 24.6174H24.7031V25.722Z" fill="#111111"/>
+                        </svg>
                     </button>
                 </div>
             </section>
@@ -1465,8 +1506,44 @@
                                 Читать далее
                             </a>
                         </div>
+                        <div class="news__content news__content-hidden">
+                            <img class="new__content-img" src="img/Фен.png" alt="Фен">
+                            <span class="news__content-data">21 декабря 2022</span>
+                            <h3 class="new__content-title">Есть ли безопасные выпрямители для волос</h3>
+                            <p class="new__content-text">
+                                Добавьте объем и рельеф коротким волосам. Посмотрите, как создать мягкие, легкие локоны
+                                и волны на коротких волосах и волосах средней длины.
+                            </p>
+                            <a href="" class="new__content-read-more">
+                                Читать далее
+                            </a>
+                        </div>
+                        <div class="news__content news__content-hidden">
+                            <img class="new__content-img" src="img/Фен.png" alt="Фен">
+                            <span class="news__content-data">21 декабря 2022</span>
+                            <h3 class="new__content-title">Есть ли безопасные выпрямители для волос</h3>
+                            <p class="new__content-text">
+                                Добавьте объем и рельеф коротким волосам. Посмотрите, как создать мягкие, легкие локоны
+                                и волны на коротких волосах и волосах средней длины.
+                            </p>
+                            <a href="" class="new__content-read-more">
+                                Читать далее
+                            </a>
+                        </div>
+                        <div class="news__content news__content-hidden">
+                            <img class="new__content-img" src="img/Фен.png" alt="Фен">
+                            <span class="news__content-data">21 декабря 2022</span>
+                            <h3 class="new__content-title">Есть ли безопасные выпрямители для волос</h3>
+                            <p class="new__content-text">
+                                Добавьте объем и рельеф коротким волосам. Посмотрите, как создать мягкие, легкие локоны
+                                и волны на коротких волосах и волосах средней длины.
+                            </p>
+                            <a href="" class="new__content-read-more">
+                                Читать далее
+                            </a>
+                        </div>
                     </div>
-                    <button class="show-more news__show-more">
+                    <button class="show-more news__show-more" id="newsShowMoreBtn">
                         Показать еще
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7031 25.722L3.22199 5.13588C2.82325 4.75375 2.80978 4.12073 3.19191 3.72199C3.57403 3.32325 4.20706 3.30978 4.6058 3.69191L26.1919 24.3786V7.44733C26.1919 6.89504 26.6396 6.44733 27.1919 6.44733C27.7442 6.44733 28.1919 6.89504 28.1919 7.44733V26.722C28.1919 27.2743 27.7442 27.722 27.1919 27.722H7.03635C6.48406 27.722 6.03635 27.2743 6.03635 26.722C6.03635 26.1697 6.48406 25.722 7.03635 25.722H24.7031Z" fill="#111111"/>

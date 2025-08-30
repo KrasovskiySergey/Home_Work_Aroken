@@ -513,8 +513,13 @@
     }
 
     /* ----------------НОВОСТИ----------------- */
-
+    .news__inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .news__content-none {
+        display: none;
+    }
+    .hidden-none {
         display: none;
     }
 
